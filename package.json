@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-import-rename",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Rename import sources",
   "main": "index.js",
   "scripts": {
