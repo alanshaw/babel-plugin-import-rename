@@ -4,7 +4,7 @@ module.exports = function (babel) {
   function createRegexs (opts) {
     if (opts._regexs) return opts
     var regexs = {}
-    Object.keys(opts).forEach((k) => { regexs[k] = new RegExp(k) })
+    Object.keys(opts).forEach(function (k) { regexs[k] = new RegExp(k) })
     opts._regexs = regexs
     return opts
   }
