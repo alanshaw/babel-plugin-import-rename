@@ -4,7 +4,7 @@ Rename import sources with a RegExp like a boss.
 
 ## Example
 
-Remove `.jsx` extension.
+Maybe you want to remove `.jsx` extension from compiled files:
 
 **input.js**
 ```js
@@ -14,7 +14,7 @@ import Foo from './Foo.jsx'
 **.babelrc**
 ```json
 {
-  "presets": ["es2015"],
+  "presets": ["react", "es2015"],
   "plugins": [
     ["import-rename", {"^(.*)\\.jsx$": "$1"}]
   ]
